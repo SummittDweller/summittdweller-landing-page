@@ -2,7 +2,7 @@
   title = "Summitt Dweller"
   author = "Mark A. McFate, but mostly Mackenzie G. McFate"
   canonifyurls = true
-  paginate = 3
+  paginate = 9
 
   theme = "hugo-theme-lean-launch-page"
   googleAnalytics = "UA-146526628-1"
