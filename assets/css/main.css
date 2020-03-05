@@ -34,3 +34,7 @@ a, span.groupText, i.fas, i.fab {
 p.disclaimer {
   margin-top: 10px;
 }
+
+span.groupTitle {
+  font-size: 2em;
+}
