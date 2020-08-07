@@ -19,6 +19,6 @@ docker image build -f push-update-Dockerfile --no-cache -t summittdweller-landin
 echo "...docker image build is complete."
 
 # Tag the new image and push it to Docker Hub
-docker login
+cat ~/summittdweller-docker-login.txt | /usr/local/bin/docker login -u summittdweller --password-stdin
 docker tag summittdweller-landing-update summittdweller/summittdweller-landing:latest
 docker push summittdweller/summittdweller-landing:latest
