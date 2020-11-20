@@ -3,12 +3,12 @@
   items:
     - title: "@SummittDweller's Personal Blog"
       icon: fas fa-edit
-      url: https://summittdweller.com/blogs/mark
+      url: https://blog.summittdweller.com
       description: The very pinnacle of blogdom.
     - title: "Mackenzie's Personal Blog"
       icon: fas fa-magic
       url: https://m4ck3ngm.com/
-      description: "HIRE ME!  Do as she says...please."
+      description: "HIRE ME! Do as she says...please."
     - title: "The CATalogue"
       icon: fas fa-cat
       url:
