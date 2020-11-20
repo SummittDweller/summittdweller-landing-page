@@ -1,4 +1,5 @@
-baseURL = "https://summittdweller.com/"
+# baseURL = "https://summittdweller.com/"
+#
 languageCode = "en-US"
 title = "SummittDweller.com"
 theme = "bootstrap-bp-hugo-startpage"
