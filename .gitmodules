@@ -1,6 +1,3 @@
-[submodule "themes/hugo-theme-m10c"]
-	path = themes/hugo-theme-m10c
-	url = https://github.com/vaga/hugo-theme-m10c.git
 [submodule "themes/bootstrap-bp-hugo-startpage"]
 	path = themes/bootstrap-bp-hugo-startpage
 	url = https://github.com/spech66/bootstrap-bp-hugo-startpage.git
