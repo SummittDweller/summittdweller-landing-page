@@ -3,12 +3,14 @@
 languageCode = "en-US"
 title = "SummittDweller.com"
 theme = "bootstrap-bp-hugo-startpage"
-googleAnalytics = "UA-146526628-1"
 copyright = "Mark A. McFate"
 enableRobotsTXT = true
 pygmentsCodeFences = true
 canonifyurls = true
 paginate = 5
+
+[services.googleAnalytics]
+  ID = "G-3QPKBWP768"
 
 [sitemap]
   changefreq = "weekly"

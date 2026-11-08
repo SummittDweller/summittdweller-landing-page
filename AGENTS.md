@@ -30,7 +30,7 @@ push unverified changes.
   "Site Analytics" placeholder panel with wiring instructions for the
   SummittDweller-Google-Analytics report.
 - `layouts/partials/` — project-level overrides of theme partials:
-  - `head.html` — includes the Matomo tracking snippet.
+  - `head.html` — emits Hugo's built-in GA4 template only in production.
   - `js.html` and `seo_schema.html` — modern-Hugo compatibility overrides
     (the theme targets an old Hugo; see below).
 - `themes/bootstrap-bp-hugo-startpage` — the theme, a **git submodule**. Do
@@ -60,8 +60,9 @@ hugo server               # local dev server
 ## Conventions
 
 - Keep changes minimal; this is a simple single-page site.
-- Google Analytics: the modern internal template emits nothing until a GA4
-  `G-XXXXXXXXXX` ID replaces the dead `UA-` value in `config.toml`. Matomo in
-  `layouts/partials/head.html` is the active tracker for now.
+- Google Analytics: `[services.googleAnalytics]` in `config.toml` configures
+  the portal's `G-3QPKBWP768` ID. Emit the current internal template only once,
+  in `layouts/partials/head.html`, gated by `hugo.IsProduction`. Do not add it
+  to `js.html` or reuse the personal blog's ID. The Matomo tracker is removed.
 - `HUMANS.md` documents the people behind the site; update it if authorship
   or credits change.

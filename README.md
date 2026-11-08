@@ -25,6 +25,28 @@ git push
 
 App Platform *automagically* takes care of the rest!
 
+# Analytics
+
+The portal uses a separate GA4 property from the personal blog. Its Web stream
+is `SummittDweller.com portal production website` for
+`https://summittdweller.com`, with Measurement ID `G-3QPKBWP768` and stream ID
+`16297878071`.
+
+`config.toml` sets the ID under `[services.googleAnalytics]`.
+`layouts/partials/head.html` emits Hugo's built-in GA4 template only in
+production; `layouts/partials/js.html` does not emit a second tracker.
+The Matomo site 7 snippet and obsolete Universal Analytics setting have been
+removed. Do not reuse the personal blog's ID or install another Google tag.
+
+Plain `hugo` builds are production builds. `hugo server` and builds using
+`--environment development` omit analytics. Review applicable privacy and
+consent requirements before publishing.
+
+After deployment, reload the live portal and check the portal property's
+Realtime report. Browser blocking can prevent visits from appearing.
+The "Site Analytics" panel remains a placeholder: installing the tracker
+does not automatically populate it with a public report.
+
 # Legacy Docker Deployment (Retired)
 
 This site was previously deployed as a Docker image (`summittdweller/summittdweller-landing`, later `mcfatem/summittdweller-landing`) pushed to Docker Hub and run on a DigitalOcean Docker droplet behind Traefik, with Watchtower auto-pulling new `:latest` images. That workflow is retired; its artifacts (`Dockerfile`, `push-update.sh`, etc.) have been preserved in the `.out-of-the-way/` directory for reference.
