@@ -20,7 +20,7 @@ paginate = 5
   pages = "/:slug/"
   page = "/:slug/"
 
-[Author]
+[params.author]
   name = "Mark A. McFate, but mostly Mackenzie G. McFate"
 
 [params]
